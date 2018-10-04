@@ -1,0 +1,62 @@
+
+// <reference path="./libraries/bootstrap/_variables.scss" />
+// <reference path="./_variables.scss" />
+// <reference path="./_mixins.scss" />
+
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.justify { text-align: justify; }
+
+.visual-clear { display: block; clear: both; }
+
+button {
+    .fas {
+        &:first-child {
+            margin-right: .5em;
+        }
+
+        &:last-child {
+            margin-left: .5em;
+        }
+    }
+}
+
+@media screen {
+    .omit-on-screen { display: none; }
+}
+
+@media print {
+    .omit-on-print { display: none; }
+    .avoid-page-breaks { page-break-inside: avoid; }
+
+    .col-print-1 { @include make-col(1); }
+    .col-print-2 { @include make-col(2); }
+    .col-print-3 { @include make-col(3); }
+    .col-print-4 { @include make-col(4); }
+    .col-print-5 { @include make-col(5); }
+    .col-print-6 { @include make-col(6); }
+    .col-print-7 { @include make-col(7); }
+    .col-print-8 { @include make-col(8); }
+    .col-print-9 { @include make-col(9); }
+    .col-print-10 { @include make-col(10); }
+    .col-print-11 { @include make-col(11); }
+    .col-print-12 { @include make-col(12); }
+}
+
+
+@media screen {
+    .tooltip {
+        .tooltip-inner {
+            padding: .2em 1em;
+        }
+
+        &.tooltip-lg {
+            font-size: $font-size-base * 1.2;
+
+            .tooltip-inner {
+                padding-top: 0;
+            }
+        }
+    }
+}

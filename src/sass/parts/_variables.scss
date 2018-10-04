@@ -1,0 +1,52 @@
+
+// Font sizes
+$font-size-base: 1rem;
+$font-size-larger: 1.3rem;
+$font-size-smaller: .8rem;
+
+
+
+// Colors
+$color-text-main: #333;
+$color-text-lighter: lighten($color-text-main, 33%);
+
+$color-bg-main: white;
+
+// Theme: http://paletton.com/#uid=55z0N0kehjn7bsOb6n-i3f1n6ch
+$color-theme-main: #94525A;
+$color-theme-complementary-dark: #5B3A66;
+$color-theme-complementary-light: #9A7D56;
+$color-theme-gray-light: #ccc;
+
+$color-bg-body1: #94525A;
+$color-bg-body2: #181528;
+
+
+// Layout globals
+$page-margin: 20px; // space left for body bg to be visible
+$page-padding-base: 80px;
+
+
+// Bootstrap overrides
+$enable-rounded: false;
+
+$grid-gutter-width: 30px;
+
+// $grid-breakpoints: (
+//     xs: 0,
+//     sm: 576px,
+//     md: 768px,
+//     lg: 992px,
+//     xl: 1200px
+// );
+$container-max-widths: (
+    sm: 540px,
+    md: 720px - ($page-margin*2),
+    lg: 960px - ($page-margin*2),
+    xl: 1140px - ($page-margin*2)
+);
+
+$body-bg: $color-bg-body1;
+$body-color: $color-text-main;
+
+//$tooltip-bg: var(--dark);

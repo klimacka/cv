@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Rebuild all",
+            "type": "gulp",
+            "task": "run-all",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Clean all",
+            "type": "gulp",
+            "task": "clean",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run TypeScript type-checking",
+            "type": "npm",
+            "script": "type-check",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "label": "Watch all",
+            "type": "gulp",
+            "task": "watch-all",
+            "problemMatcher": []
+        }
+    ]
+}
