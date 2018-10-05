@@ -8,6 +8,8 @@
 .right { text-align: right; }
 .justify { text-align: justify; }
 
+.smaller { font-size: 80%; }
+
 .visual-clear { display: block; clear: both; }
 
 button {
@@ -29,6 +31,23 @@ button {
 @media print {
     .omit-on-print { display: none; }
     .avoid-page-breaks { page-break-inside: avoid; }
+    .no-flex-on-print { display: block; }
+
+    .page-break-after,
+    .page-break-before {
+        width: 100%;
+        clear: both;
+        height: 3pt;
+    }
+    .page-break-after {
+        page-break-after: always;
+        break-after: always;
+    }
+    .page-break-before {
+        page-break-before: always;
+        break-before: always;
+    }
+
 
     .col-print-1 { @include make-col(1); }
     .col-print-2 { @include make-col(2); }

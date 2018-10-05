@@ -1,0 +1,49 @@
+include photo_row
+
+.row
+    .col-xl-7
+        include about
+
+    .col-xl-5
+        .row
+            .col
+                h2 Skills
+        .row
+            .col-lg-6.col-xl-12.col-print-6
+                include skills_frontend
+
+            .col-lg-6.col-xl-12.col-print-6
+                include skills_backend
+        .row
+            .col-lg-6.col-xl-12.col-print-6
+                include languages
+
+.page-break-after
+
+.row.no-flex-on-print
+    .col-xl-7
+        include timeline
+
+        .page-break-after
+
+    .col-xl-5
+        .row
+            .col-lg-6.col-xl-12.col-print-6
+                include education
+
+
+            .col-lg-6.col-xl-12.col-print-6
+                article.contact
+                    h2 Contact + other details
+                    p TODO
+                    p TODO
+                    p TODO
+                    p TODO
+                    p TODO
+
+        .row
+            .col-lg-6.col-xl-12.col-print-6
+                include tools
+
+            .col-lg-6.col-xl-12.col-print-6
+                include hobbies

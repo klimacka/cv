@@ -74,18 +74,12 @@ body {
         box-shadow: none;
         border: none;
     }
-
-    article {
-        padding: 0 0 .5rem;
-        margin-bottom: 1rem;
-
-        p {
-            text-align: justify;
-        }
-    }
-
 }
 
+article {
+    padding: 0 0 .5rem;
+    margin-bottom: 1rem;
+}
 
 h2, h3 {
     color: $color-theme-main;
@@ -171,6 +165,10 @@ h3 {
 
 
 article.text {
+    p {
+        text-align: justify;
+    }
+
     em {
         @media screen { color: $color-text-lighter; }
         @media print {
@@ -199,6 +197,8 @@ ul.skill-list {
         font-size: $font-size-smaller;
         font-weight: bold;
         padding-left: .5rem;
+        white-space: nowrap;
+        overflow: hidden;
 
         @media screen {
             color: $color-bg-main;
@@ -296,6 +296,148 @@ ul.language-list {
         }
     }
 }
+
+article.timeline {
+    .content {
+        position: relative;
+
+        .line {
+            position: absolute;
+            top: 3rem;
+            bottom: 1.5rem;
+            left: 1.8rem;
+            width: 1px;
+            border-left: 3pt solid $color-theme-complementary-light;
+            z-index: 1;
+
+            @media print {
+                border-color: desaturate($color-theme-complementary-light, 100%);
+                left: 1.5rem;
+            }
+        }
+    }
+
+    table {
+        border: 0;
+        border-collapse: collapse;
+
+        td {
+            border: 0;
+
+            &.year {
+                font-weight: bold;
+                text-align: center;
+                width: 4em;
+
+                > span {
+                    position: relative;
+                    display: inline-block;
+                    padding: .5rem 0;
+                    background: $color-bg-main;
+                    z-index: 2;
+                }
+            }
+
+            &.content {
+                text-align: justify;
+                padding: .25rem 0;
+                background: transparent no-repeat left center;
+
+                @media screen {
+                    padding-left: 12px; // room for the callout
+                    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4goFEQwZPwzWMQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC+SURBVDjLldS9DcIwEEDhdymiREgoG1AwDgNQMQYSzMA2zJElaNLmOl93VIkI+fElhQvrfVZkWxaCX9/3B+Aqe2LgKXti4Cx7YkBkT8wwRONFsBXPQC6egEg8gmgMUHRdd3D3UAxQqOrFzB7uno0BipRSqaqlmYm7Z69J4e7vlNJLVT9mRg4JQNu2RxG51XV9b5rmVFUVsnIJxtkomsxE0GyJHFr80S20uu9raPOgFlHuoP5R6BH4RRJ9Zgb0BQRPdm84qf5UAAAAAElFTkSuQmCC");
+                }
+
+                .bg {
+                    padding: .75rem 1rem 0;
+
+                    @media screen {
+                        background: $color-theme-gray-very-light;
+                        border-bottom: 1px solid $color-theme-gray-light;
+                    }
+
+                    @media print { border: 1pt solid $color-theme-gray-light; }
+                }
+
+                p {
+                    //margin: 0 0 .75rem;
+
+                    &.title {
+                        font-weight: bold;
+                        font-size: 110%;
+
+                        .range {
+                            font-weight: normal;
+                            font-size: $font-size-smaller;
+                            font-style: italic;
+                            float: right;
+                            @media screen { color: $color-text-lighter; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+article.education {
+    section {
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        text-transform: none;
+        @media screen { color: $color-theme-complementary-dark; }
+    }
+
+    p {
+        margin: 0 .2rem;
+    }
+}
+
+ul.tag-list {
+    margin: 1em 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+        list-style: none inside;
+        display: inline-block;
+        margin: 0 .2em .5em 0;
+        padding: .5em .8em;
+        font-weight: bold;
+        white-space: nowrap;
+
+        @media screen { color: $color-bg-main; }
+        @media print { border: 1pt solid #777; }
+    }
+}
+
+
+article.hobbies ul.tag-list li {
+    font-size: $font-size-smaller;
+
+    @media screen { background-color: $color-theme-complementary-light; }
+
+    i.fas, i.far {
+        font-size: $font-size-base;
+    }
+}
+
+article.tools ul.tag-list li {
+    font-size: .6rem;
+    margin: 0 .1em .2em 0;
+
+    @media screen { background-color: $color-theme-complementary-dark; }
+
+    i.fas, i.far {
+        font-size: .7rem;
+    }
+}
+
+
+
+
 
 
 @import "parts/miscellaneous";
