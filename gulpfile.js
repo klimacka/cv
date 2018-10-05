@@ -80,7 +80,7 @@ gulp.task("watch-html-pug", ["html-pug"], function () {
 });
 
 gulp.task("html-pug", function () {
-    return gulp.src(sources.pug + "/**/*.pug")
+    return gulp.src(sources.pug + "/*.pug")
         .pipe(pug({}))
         .pipe(htmlFormat())
         .pipe(gulp.dest(targets.wwwRoot));

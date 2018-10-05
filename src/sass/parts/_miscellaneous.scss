@@ -8,6 +8,7 @@
 .right { text-align: right; }
 .justify { text-align: justify; }
 
+.bold { font-weight: bold; }
 .smaller { font-size: 80%; }
 
 .visual-clear { display: block; clear: both; }
@@ -48,6 +49,11 @@ button {
         break-before: always;
     }
 
+    a i.fas.fa-external-link-alt { display: none; }
+    a {
+        color: #777;
+        text-decoration: none !important;
+    }
 
     .col-print-1 { @include make-col(1); }
     .col-print-2 { @include make-col(2); }
