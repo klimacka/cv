@@ -25,7 +25,7 @@ const sources = {
 };
 
 // Targets:
-const targetsRoot = "W:\\jannickelunde.eu\\www";
+const targetsRoot = "D:\\CodeDev\\GitHubRepos\\cv\\dist\\www";
 const targets = {
     wwwRoot: targetsRoot,
     files: `${targetsRoot}/files`,
