@@ -40,7 +40,7 @@ const compileSassToCss = () =>
         .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
         .pipe(postcss([postcssNormalize(), autoprefixer()]))
         .pipe(sourcemaps.write('.'))
-        .pipe(dest(wwwRoot));
+        .pipe(dest(wwwRoot + '/files'));
 
 function defaultTask(cb) {
     cb();
