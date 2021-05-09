@@ -5,9 +5,9 @@ html
 
         title Janča Klímová – online resume
 
-        link(rel="shortcut icon" href="../favicon.ico" type="image/x-icon")
+        link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous")
-        link(rel="stylesheet" href="../styles.css")
+        link(rel="stylesheet" href="styles.css")
 
         script(src="https://code.jquery.com/jquery-3.6.0.slim.min.js", integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js", integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns", crossorigin="anonymous")
@@ -16,11 +16,11 @@ html
         #outer-wrapper
             #content-wrapper
                 .content-page.container
-                    include ../parts/photo_row
+                    include parts/photo_row
 
                     .row
                         .col-xl-7
-                            include ../parts/about
+                            include parts/about
 
                         .col-xl-5
                             .row
@@ -28,40 +28,40 @@ html
                                     h2 Skills
                             .row
                                 .col-lg-6.col-xl-12.col-print-6
-                                    include ../parts/skills_frontend
+                                    include parts/skills_frontend
 
                                 .col-lg-6.col-xl-12.col-print-6
-                                    include ../parts/skills_backend
+                                    include parts/skills_backend
                             .row
                                 .col-lg-6.col-xl-12.col-print-6
-                                    include ../parts/languages
+                                    include parts/languages
 
                     .page-break-after
 
                     .row.no-flex-on-print
                         .col-xl-7
-                            include ../parts/timeline
+                            include parts/timeline
 
                             .page-break-after
 
                         .col-xl-5
                             .row
                                 .col-lg-6.col-xl-12.col-print-6
-                                    include ../parts/education
+                                    include parts/education
 
 
                                 .col-lg-6.col-xl-12.col-print-6
-                                    include ../parts/details
+                                    include parts/details
 
                             .row
                                 .col-lg-6.col-xl-12.col-print-6
-                                    include ../parts/tools
+                                    include parts/tools
 
                                 .col-lg-6.col-xl-12.col-print-6
-                                    include ../parts/hobbies
+                                    include parts/hobbies
 
                     #page-footer
                         p Last update: May 2021
-                        p.omit-on-screen See online at http://klimacka.eu/en/cv.html
+                        p.omit-on-screen See online at http://klimacka.eu/en_cv.html
 
-        include ../parts/download_pdf
+        include parts/download_pdf
