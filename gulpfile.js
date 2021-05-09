@@ -22,7 +22,10 @@ const wwwRoot = 'D:\\CodeDev\\GitHubRepos\\cv\\dist\\www';
 
 
 const compilePugToHtml = () =>
-    src(sources.pug + '/*.pug')
+    src([
+        sources.pug + '/**/*.pug',
+        '!' + sources.pug + '/parts/**',
+    ])
         .pipe(pug({}))
         .pipe(htmlFormat())
         .pipe(dest(wwwRoot));
@@ -35,7 +38,7 @@ const compileSassToCss = () =>
     src(sources.sass + '/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
-        .pipe(postcss([ postcssNormalize(), autoprefixer() ]))
+        .pipe(postcss([postcssNormalize(), autoprefixer()]))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(wwwRoot));
 
