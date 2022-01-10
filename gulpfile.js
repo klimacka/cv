@@ -1,6 +1,6 @@
 const { src, dest, series, parallel } = require('gulp');
 const pug = require('gulp-pug');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const clean = require('gulp-clean');
 const postcss = require('gulp-postcss');
 const htmlFormat = require('gulp-html-beautify');
