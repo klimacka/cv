@@ -5,7 +5,8 @@
     "author": "Jana Klímová",
     "license": "MIT",
     "scripts": {
-        "type-check": "tsc --noEmit"
+        "type-check": "tsc --noEmit",
+        "build": ".\\node_modules\\.bin\\gulp build"
     },
     "browserslist": [
         "last 5 chrome versions",
