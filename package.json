@@ -18,17 +18,19 @@
     ],
     "devDependencies": {
         "autoprefixer": "10.4.2",
-        "browserslist": "4.19.1",
+        "browserslist": "latest",
         "chokidar": "3.5.2",
         "gulp": "4.0.2",
         "gulp-clean": "0.4.0",
-        "gulp-html-beautify": "1.0.1",
         "gulp-postcss": "9.0.1",
-        "gulp-pug": "5.0.0",
         "gulp-sass": "5.1.0",
         "gulp-sourcemaps": "3.0.0",
+        "prettier": "latest",
         "postcss-normalize": "10.0.1",
-        "pug": "3.0.2",
         "node-sass": "7.0.1"
+    },
+    "prettier": {
+        "tabWidth": 2,
+        "printWidth": 80
     }
 }
