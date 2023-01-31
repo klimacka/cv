@@ -1,9 +1,6 @@
 const { src, dest, series, parallel } = require('gulp');
-// const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('node-sass'));
-// const clean = require('gulp-clean');
 const postcss = require('gulp-postcss');
-// const htmlFormat = require('gulp-html-beautify');
 const postcssNormalize = require('postcss-normalize');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
@@ -17,17 +14,7 @@ const sources = {
 };
 
 // Targets:
-const wwwRoot = 'D:\\CodeDev\\GitHubRepos\\cv\\dist\\www';
-
-
-// const compilePugToHtml = () =>
-//     src([
-//         sources.pug + '/**/*.pug',
-//         '!' + sources.pug + '/parts/**',
-//     ])
-//         .pipe(pug({}))
-//         .pipe(htmlFormat())
-//         .pipe(dest(wwwRoot));
+const wwwRoot = './dist/www';
 
 const copyStaticAssets = () =>
     src(sources.www + '/**/*')
