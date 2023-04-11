@@ -5,7 +5,8 @@
     "author": "Jana Klímová",
     "license": "MIT",
     "scripts": {
-        "build": "gulp build"
+        "build": "gulp build",
+        "update-deps": "npm i -D npm-check-updates && ncu --upgrade && npm install && npm remove npm-check-updates"
     },
     "browserslist": [
         "last 5 chrome versions",
@@ -16,17 +17,17 @@
         "> 1%"
     ],
     "devDependencies": {
-        "autoprefixer": "10.4.2",
-        "browserslist": "latest",
-        "chokidar": "3.5.2",
-        "gulp": "4.0.2",
-        "gulp-clean": "0.4.0",
-        "gulp-postcss": "9.0.1",
-        "gulp-sass": "5.1.0",
-        "gulp-sourcemaps": "3.0.0",
-        "prettier": "latest",
-        "postcss-normalize": "10.0.1",
-        "node-sass": "7.0.1"
+        "autoprefixer": "^10.4.14",
+        "browserslist": "^4.21.5",
+        "chokidar": "^3.5.3",
+        "gulp": "^4.0.2",
+        "gulp-clean": "~0.4.0",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "node-sass": "^8.0.0",
+        "postcss-normalize": "^10.0.1",
+        "prettier": "^2.8.7"
     },
     "prettier": {
         "tabWidth": 2,
