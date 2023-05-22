@@ -6,6 +6,7 @@
     "license": "MIT",
     "scripts": {
         "build": "gulp build",
+        "watch": "gulp watch",
         "update-deps": "npm i -D npm-check-updates && ncu --upgrade && npm install && npm remove npm-check-updates"
     },
     "browserslist": [
