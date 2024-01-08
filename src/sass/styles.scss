@@ -68,7 +68,6 @@ body {
   padding: round($page-padding-base * 0.7) $page-padding-base
     round($page-padding-base * 1.5);
   box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.4);
-  border-top: 20px solid $color-bg-body1;
 
   @include media-breakpoint-down(sm) {
     padding-left: 2rem;
@@ -79,7 +78,6 @@ body {
     background: transparent;
     padding: 0;
     box-shadow: none;
-    border: none;
   }
 }
 
@@ -110,7 +108,7 @@ h3 {
 
 #photo-header {
   @media screen {
-    margin-top: -165px;
+    margin-top: -150px;
     text-align: center;
   }
 
@@ -128,7 +126,7 @@ h3 {
       border-radius: 50%;
       overflow: hidden;
       padding: 10px;
-      background: $color-bg-body1;
+      background: $color-bg-main;
       display: inline-block;
 
       img {
@@ -462,42 +460,11 @@ ul.tag-list {
     padding: 0.5em 0.8em;
     font-weight: bold;
     white-space: nowrap;
-    flex-grow: 1;
-    border: 1pt solid $color-bg-main;
+    font-size: $font-size-smaller;
 
     @media screen {
-      background-color: $color-theme-gray-very-light;
-      border-color: $color-theme-gray-light;
+      color: $color-text-lighter;
     }
-    @media print {
-      border-color: #777;
-    }
-  }
-}
-
-article.hobbies ul.tag-list li {
-  font-size: $font-size-smaller;
-
-  @media screen {
-    color: $color-theme-complementary-light;
-  }
-
-  i.fas,
-  i.far {
-    font-size: $font-size-base;
-  }
-}
-
-article.tools ul.tag-list li {
-  font-size: 0.6rem;
-
-  @media screen {
-    color: $color-theme-complementary-dark;
-  }
-
-  i.fas,
-  i.far {
-    font-size: 0.7rem;
   }
 }
 
