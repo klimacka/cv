@@ -1,6 +1,6 @@
 {
     "name": "mywebcv",
-    "version": "0.0.2",
+    "version": "1.0.2",
     "description": "Web CV",
     "author": "Jana Klímová",
     "license": "MIT",
@@ -18,17 +18,17 @@
         "> 1%"
     ],
     "devDependencies": {
-        "autoprefixer": "^10.4.14",
-        "browserslist": "^4.21.5",
+        "autoprefixer": "^10.4.16",
+        "browserslist": "^4.22.2",
         "chokidar": "^3.5.3",
         "gulp": "^4.0.2",
         "gulp-clean": "~0.4.0",
         "gulp-postcss": "^9.0.1",
         "gulp-sass": "^5.1.0",
         "gulp-sourcemaps": "^3.0.0",
-        "node-sass": "^8.0.0",
+        "node-sass": "^9.0.0",
         "postcss-normalize": "^10.0.1",
-        "prettier": "^2.8.7"
+        "prettier": "^3.1.1"
     },
     "prettier": {
         "tabWidth": 2,
